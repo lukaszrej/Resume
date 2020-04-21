@@ -3,9 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <header className='header-main'
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
