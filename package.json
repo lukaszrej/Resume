@@ -15,9 +15,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
     "@emotion/core": "^10.0.28",
     "emotion-theming": "^10.0.27",
     "gatsby": "^2.20.27",
@@ -25,8 +22,12 @@
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-sass": "^2.2.3",
     "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-json": "^2.3.3",
     "local-storage-fallback": "^4.1.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.4"
