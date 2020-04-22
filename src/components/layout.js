@@ -1,30 +1,27 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import React, { useContext } from "react"
+import { Global, css } from '@emotion/core'
+import { useTheme } from "emotion-theming"
+import Context from "../store/context"
 import "../styles/main.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div className='p-main'>
-        <main>{children}</main>
-        <footer>
-          © 2020
-        </footer>
-      </div>
-    </>
+    const { state } = useContext(Context)
+    const theme = useTheme()
+
+    return (
+        <>
+            <Global
+                styles={css`                    
+                    body {
+                        background-color: ${state.isDark ? theme.dark.background : theme.light.background}
+                    }
+                `}
+            />
+            <div className='p-main'>
+                <main>{children}</main>
+            </div>
+        </>
   )
 }
 

@@ -1,10 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Resume`,
-    description: `This is simple site created as my current resume.`,
     author: `Łukasz Rej`,
+    description: `Personal resume. Created with GatsbyJS`,
+    lang: `en`,
+    charSet: `utf-8`,
+    robots: `noindex, nofollow `,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -28,8 +32,5 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
