@@ -5,6 +5,9 @@ export default () => {
     const { profile } = usePersonalData();
 
     return (
-        <h2>{ profile }</h2>
+        <article className="p-main__profile">
+            <h2 className="p-main__profile-title">Profile</h2>
+            <p className="p-main__profile-content">{ profile }</p>
+        </article>
     )
 };

@@ -1,0 +1,22 @@
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__mode-button {
+    background-repeat: no-repeat;
+    background-size: 28px;
+    height: 28px;
+    width: 28px;
+    border: none;
+  }
+
+  &__mode-button:focus {
+    outline: 0;
+  }
+}

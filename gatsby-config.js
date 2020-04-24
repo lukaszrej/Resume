@@ -19,5 +19,11 @@ module.exports = {
         typeName: `Json`,
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 };
