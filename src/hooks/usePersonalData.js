@@ -8,6 +8,22 @@ const usePersonalData = () => {
                     nodes {
                         name
                         profile
+                        contact {
+                            location
+                            phone
+                            email
+                        }
+                        skills
+                        info {
+                            linkedIn {
+                                title
+                                url
+                            }
+                            github {
+                                title
+                                url
+                            }
+                        }
                         experience {
                             company
                             dates
@@ -29,20 +45,10 @@ const usePersonalData = () => {
                             scope
                             degree
                         }
-                        experienceOther {
+                        otherExperience {
                             company
                             dates
                             position
-                        }
-                        contact {
-                            phone
-                            email
-                        }
-                        technologies
-                        info {
-                            linkedIn
-                            github
-                            location
                         }
                         languages
                         hobbies

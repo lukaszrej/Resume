@@ -1,6 +1,25 @@
 {
   "name": "Łukasz Rej",
   "profile": "I've been learning front-end for over two years as a hobby. First practical experience as a Junior Frontend Developer is behind me. The company decided to terminate contract with me and others (cornovirus). Now I am looking for new opportunities.",
+  "contact": {
+    "location": "Location: Warsaw",
+    "phone": "+48 504 264 554",
+    "email": "rejlukasz@gmail.com"
+  },
+  "info": {
+    "linkedIn": [
+      {
+        "title": "linkedin.com/in/lukasz-rej",
+        "url": "https://linkedin.com/in/lukasz-rej/"
+      }
+    ],
+    "github": [
+      {
+        "title": "github.com/lukaszrej",
+        "url": "https://github.com/lukaszrej/"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "Miinto Group",
@@ -15,6 +34,70 @@
         "A/B testing"
       ]
     }
+  ],
+  "otherExperience": [
+    {
+      "company": "Mettler-Toledo International, Inc",
+      "dates": "01/2019 – 11/2019",
+      "position": "SubProcess Leader Dispute Management"
+    },
+    {
+      "company": null,
+      "dates": "01/2018 – 12/2018",
+      "position": "Senior AR Accountant"
+    },
+    {
+      "company": null,
+      "dates": "08/2016 – 12/2017",
+      "position": "AR Accountant"
+    },
+    {
+      "company": "TRW Automotive (ZF Group)",
+      "dates": "01/2015 – 04/2016",
+      "position": "Junior AR Accountant"
+    },
+    {
+      "company": "PriceWaterhouseCoopers (PwC)",
+      "dates": "10/2013 – 12/2014",
+      "position": "Process Specialist"
+    }
+  ],
+  "education": [
+    {
+      "school": "CodersLab IT School",
+      "dates": "10/2018 –06/2019",
+      "field": "Field of study: JavaScript Developer: React",
+      "scope": "Thematic scope: HTML, CSS, JavaScript, SASS, RWD, jQuery, ECMAScript 6, Git, React JS",
+      "degree": null
+    },
+    {
+      "school": "University of Lodz",
+      "dates": "10/2007 – 06/2010 and 10/2010 – 06/2012",
+      "field": "Field of study: International Relations",
+      "scope": "Specialization: German studies",
+      "degree": "Degree: Bachelor/Master of International Relations"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React.js",
+    "CSS",
+    "SCSS",
+    "HTML5",
+    "Twig",
+    "JQuery",
+    "Rest API",
+    "Gatsby.js",
+    "GraphQL",
+    "headless CMS",
+    "Bootstrap",
+    "Git",
+    "Github",
+    "NPM",
+    "Webpack",
+    "RWD",
+    "BEM",
+    "Scrum"
   ],
   "projects": [
     {
@@ -71,79 +154,6 @@
       }
     }
   ],
-  "education": [
-    {
-      "school": "CodersLab IT School",
-      "dates": "10/2018 –06/2019",
-      "field": "Field of study: JavaScript Developer: React",
-      "scope": "Thematic scope: HTML, CSS, JavaScript, SASS, RWD, jQuery, ECMAScript 6, Git, React JS",
-      "degree": null
-    },
-    {
-      "school": "University of Lodz",
-      "dates": "10/2007 – 06/2010 and 10/2010 – 06/2012",
-      "field": "Field of study: International Relations",
-      "scope": "Specialization: German studies",
-      "degree": "Degree: Bachelor/Master of International Relations"
-    }
-  ],
-  "experienceOther": [
-    {
-      "company": "Mettler-Toledo International, Inc",
-      "dates": "01/2019 – 11/2019",
-      "position": "SubProcess Leader Dispute Management"
-    },
-    {
-      "company": "Mettler-Toledo International, Inc",
-      "dates": "01/2018 – 12/2018",
-      "position": "Senior AR Accountant"
-    },
-    {
-      "company": "Mettler-Toledo International, Inc",
-      "dates": "08/2016 – 12/2017",
-      "position": "AR Accountant"
-    },
-    {
-      "company": "TRW Automotive (ZF Group)",
-      "dates": "01/2015 – 04/2016",
-      "position": "Junior AR Accountant"
-    },
-    {
-      "company": "PriceWaterhouseCoopers (PwC)",
-      "dates": "10/2013 – 12/2014",
-      "position": "Process Specialist"
-    }
-  ],
-  "contact": {
-    "phone": "+48 504 264 554",
-    "email": "rejlukasz@gmail.com"
-  },
-  "technologies": [
-    "JavaScript",
-    "React.js",
-    "CSS",
-    "SCSS",
-    "HTML5",
-    "Twig",
-    "JQuery",
-    "Rest API",
-    "Gatsby.js",
-    "GraphQL",
-    "headless CMS",
-    "Bootstrap",
-    "Git",
-    "Github",
-    "NPM",
-    "Webpack",
-    "RWD",
-    "BEM",
-    "Scrum"
-  ],
-  "info": {
-    "linkedIn": "linkedin.com/in/lukasz-rej/",
-    "github": "github.com/lukaszrej",
-    "location": "Location: Warsaw"
-  },
   "languages": [
     "English - very good knowledge (B2)",
     "German - very good knowledge (B2)",

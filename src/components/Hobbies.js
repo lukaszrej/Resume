@@ -7,8 +7,8 @@ export default () => {
     const items = hobbies.map((hobby, index) => <li key={index}>{ hobby }</li>);
 
     return (
-        <section className="p-hobbies">
-            <h2 className="c-title">Hobbies</h2>
+        <section className="c-section p-hobbies">
+            <header><h2 className="c-title">Hobbies</h2></header>
             <ul className="c-list">{ items }</ul>
         </section>
     );

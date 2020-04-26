@@ -14,8 +14,8 @@ export default () => {
     );
 
     return (
-        <section className="p-projects">
-            <h2 className="c-title">Projects</h2>
+        <section className="c-section p-projects">
+            <header><h2 className="c-title">Projects</h2></header>
             <article>{ items }</article>
         </section>
     );

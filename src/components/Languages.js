@@ -7,8 +7,8 @@ export default () => {
     const items = languages.map((language, index) => <li key={index}>{ language }</li>);
 
     return (
-        <section className="p-languages">
-            <h2 className="c-title">Languages</h2>
+        <section className="c-section p-languages">
+            <header><h2 className="c-title">Languages</h2></header>
             <ul className="c-list">{ items }</ul>
         </section>
     );

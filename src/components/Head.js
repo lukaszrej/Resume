@@ -25,16 +25,16 @@ export default () => {
             <Global
                 styles={css`                    
                     body { background-color: ${state.isDark ? theme.dark.background : theme.light.background} }
-                    h1, h2, p, div { color: ${state.isDark ? theme.dark.fontColor : theme.light.fontColor} }
+                    h1, h2, p, div, a { color: ${state.isDark ? theme.dark.fontColor : theme.light.fontColor} }
                     div.p-header__button { background-image: url("${state.isDark ? theme.dark.sunWhite : theme.light.sunBlack}") }
                 `}
             />
-            <header className="p-header">
-                <h1 className="p-header__title">{ name }</h1>
+            <div className="p-header">
+                <header><h1 className="p-header__title">{ name }</h1></header>
                 <div className='p-header__button'
                      onClick={ () => dispatch({type: "TOGGLE_DARK_MODE" }) }
                      role="button" tabIndex="0" />
-            </header>
+            </div>
         </>
     );
 };

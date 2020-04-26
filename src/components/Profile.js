@@ -5,8 +5,8 @@ export default () => {
     const { profile } = usePersonalData();
 
     return (
-        <section className="p-profile">
-            <h2 className="c-title">Profile</h2>
+        <section className="c-section p-profile">
+            <header><h2 className="c-title">Profile</h2></header>
             <p>{ profile }</p>
         </section>
     );
