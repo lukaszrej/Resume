@@ -1,0 +1,23 @@
+.p-main {
+
+  &__wrapper {
+    display: flex;
+
+  }
+
+  &__column {
+    max-width: 60%;
+  }
+
+  & > article > h2, & > article > h3, & > article > h4 {
+    margin-bottom: 6px;
+  }
+
+  & > article > p {
+    margin-bottom: 0;
+  }
+
+  & > article > p:last-child {
+    margin-bottom: 6px;
+  }
+}

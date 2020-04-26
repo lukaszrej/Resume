@@ -5,24 +5,18 @@ export default () => {
     const { projects } = usePersonalData();
 
     const items = projects.map((element, index) => (
-        <div key={index}>
-            <h3>{element.name}</h3>
-            <div>{element.description.technologies}</div>
-            <div>{element.description.demo}</div>
-            <div>
-                {element.description.points.map(item => {
-                    return <ul>
-                        <li>{ item }</li>
-                    </ul>
-                })}
-            </div>
-        </div>)
+        <>
+            <h3 className="p-projects__title" key={index}>{ element.name }</h3>
+            <p className="p-projects__description">{ element.description.technologies }</p>
+            <p className="p-projects__description">{ element.description.demo }</p>
+            <ul className="c-list">{ element.description.points.map(item => <li>{ item }</li>) }</ul>
+        </>)
     );
 
     return (
-        <article className="p-main__projects">
-            <h2 className="p-main__projects-title">Projects</h2>
-            <section className="p-main__projects-content">{ items }</section>
-        </article>
+        <section className="p-projects">
+            <h2 className="c-title">Projects</h2>
+            <article>{ items }</article>
+        </section>
     );
 };

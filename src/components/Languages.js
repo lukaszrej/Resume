@@ -4,16 +4,12 @@ import usePersonalData from "../hooks/usePersonalData";
 export default () => {
     const { languages } = usePersonalData();
 
-    const items = languages.map((language, index) => (
-        <div key={index}>
-            <p>{ language }</p>
-        </div>
-    ))
+    const items = languages.map((language, index) => <li key={index}>{ language }</li>);
 
     return (
-        <article className="p-main__languages">
-            <h2 className="p-main__languages-title">Languages</h2>
-            <p className="p-main__languages-content">{ items }</p>
-        </article>
-    )
+        <section className="p-languages">
+            <h2 className="c-title">Languages</h2>
+            <ul className="c-list">{ items }</ul>
+        </section>
+    );
 };

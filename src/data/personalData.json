@@ -1,6 +1,6 @@
 {
   "name": "Łukasz Rej",
-  "profile": "I've been learning front-end for over two years as a hobby. First practical experience as a Junior Frontend Developer is behind me. Almost 5 months at Miinto gave me confidence. The company decided to terminate contract with me and others (cornovirus). Now I am looking for new opportunities.",
+  "profile": "I've been learning front-end for over two years as a hobby. First practical experience as a Junior Frontend Developer is behind me. The company decided to terminate contract with me and others (cornovirus). Now I am looking for new opportunities.",
   "experience": [
     {
       "company": "Miinto Group",
@@ -119,25 +119,30 @@
     "email": "rejlukasz@gmail.com"
   },
   "technologies": [
-    "JavaScript (ES6)",
-    "CSS, Sass/SCSS",
-    "HTML, Twig (template engine)",
-    "ReactJS, VueJS (basics)",
-    "JQuery (+ Ajax)",
-    "work with REST API",
-    "GatsbyJS, headless CMS",
+    "JavaScript",
+    "React.js",
+    "CSS",
+    "SCSS",
+    "HTML5",
+    "Twig",
+    "JQuery",
+    "Rest API",
+    "Gatsby.js",
+    "GraphQL",
+    "headless CMS",
     "Bootstrap",
-    "Git, Github",
-    "NPM, Webpack, Gulp",
-    "RWD-concepts",
-    "BEM-methodology",
-    "Scrum/Agile",
-    "Windows/Linux/Mac OS X"
+    "Git",
+    "Github",
+    "NPM",
+    "Webpack",
+    "RWD",
+    "BEM",
+    "Scrum"
   ],
   "info": {
     "linkedIn": "linkedin.com/in/lukasz-rej/",
     "github": "github.com/lukaszrej",
-    "location": "Current location: Warsaw"
+    "location": "Location: Warsaw"
   },
   "languages": [
     "English - very good knowledge (B2)",

@@ -1,16 +1,27 @@
-import React from "react";
+import React, {useContext} from "react";
 import usePersonalData from "../hooks/usePersonalData";
+import {css, Global} from "@emotion/core";
+import { useTheme } from "emotion-theming";
+import Context from "../store/context";
 
 export default () => {
     const { contact } = usePersonalData();
+    const { state } = useContext(Context);
+    const theme = useTheme();
 
     return (
-        <article className="p-main__contact">
-            <h2 className="p-main__contact-title">Contact</h2>
-            <section className="p-main__contact-content">
-                <p>{ contact.phone }</p>
-                <p>{ contact.email }</p>
+        <>
+            <Global
+                styles={css`
+                    .p-contact__phone { background-image: url("${state.isDark ? theme.dark.phoneWhite : theme.light.phoneBlack}") }
+                    .p-contact__mail { background-image: url("${state.isDark ? theme.dark.mailWhite : theme.light.mailBlack}") }
+                `}
+            />
+            <section className="p-contact">
+                <h2 className="c-title">Contact</h2>
+                <p><i className="c-icon p-contact__phone"/>{ contact.phone }</p>
+                <p><i className="c-icon p-contact__mail"/>{ contact.email }</p>
             </section>
-        </article>
+        </>
     );
 };

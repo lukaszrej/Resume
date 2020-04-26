@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import ExperienceOther from "../components/ExperienceOther";
 import Contact from "../components/Contact";
-import Technologies from "../components/Technologies";
+import Skills from "../components/Skills";
 import Info from "../components/Info";
 import Languages from "../components/Languages";
 import Hobbies from "../components/Hobbies";
@@ -17,16 +17,22 @@ const IndexPage = () => (
     <main className="p-container">
         <Head/>
         <section className="p-main">
-            <Profile/>
-            <Experience/>
-            <Projects/>
-            <Education/>
-            <ExperienceOther/>
-            <Contact/>
-            <Technologies/>
-            <Info/>
-            <Languages/>
-            <Hobbies/>
+            <div className="p-main__wrapper">
+                <div className="p-main__column">
+                    <Profile/>
+                    <Info/>
+                    <Skills/>
+                    <Contact/>
+                    <Education/>
+                    <Languages/>
+                    <Hobbies/>
+                </div>
+                <div>
+                    <Experience/>
+                    <Projects/>
+                    <ExperienceOther/>
+                </div>
+            </div>
             <Consent/>
         </section>
     </main>

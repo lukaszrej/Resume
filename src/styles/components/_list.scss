@@ -1,0 +1,8 @@
+.c-list {
+  list-style-type: none;
+  margin: 0;
+
+  & > li {
+    margin-bottom: .2rem;
+  }
+}

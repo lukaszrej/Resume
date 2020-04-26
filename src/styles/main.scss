@@ -1,5 +1,11 @@
 @import "reset";
 @import "base";
-@import "container";
-@import "header";
-@import "main";
+@import "./pages/container";
+@import "./components/title";
+@import "./components/list";
+@import "./components/tags";
+@import "./components/icon";
+@import "./pages/header";
+@import "./pages/main";
+@import "./pages/projects";
+@import "./pages/consent";

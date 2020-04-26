@@ -4,16 +4,12 @@ import usePersonalData from "../hooks/usePersonalData";
 export default () => {
     const { hobbies } = usePersonalData();
 
-    const items = hobbies.map((hobby, index) => (
-        <div key={index}>
-            <p>{ hobby }</p>
-        </div>
-    ))
+    const items = hobbies.map((hobby, index) => <li key={index}>{ hobby }</li>);
 
     return (
-        <article className="p-main__hobbies">
-            <h2 className="p-main__hobbies-title">Hobbies</h2>
-            <p className="p-main__hobbies-content">{ items }</p>
-        </article>
-    )
+        <section className="p-hobbies">
+            <h2 className="c-title">Hobbies</h2>
+            <ul className="c-list">{ items }</ul>
+        </section>
+    );
 };

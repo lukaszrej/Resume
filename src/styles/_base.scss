@@ -1,38 +1,3 @@
 body {
   line-height: 1.625;
 }
-
-//.p-profile {
-//  display: grid;
-//  grid-template-columns: 1fr 3fr;
-//  grid-template-areas:
-//    "contact profile"
-//    "work work"
-//  ;
-//
-//  grid-gap: .1rem;
-//
-//  .profile {
-//    grid-area: profile
-//  }
-//  .work {
-//    grid-area: work;
-//  }
-//  .contact {
-//    grid-area: contact;
-//  }
-//
-//  @media screen and (max-width: 767px) {
-//    grid-template-columns: 1fr;
-//  }
-//}
-//
-//.p-profile > div {
-//  background: lightgrey;
-//  padding: 1rem;
-//}
-//
-//.p-profile > div:nth-child(odd) {
-//  background: lightblue;
-//  padding: 1rem;
-//}
