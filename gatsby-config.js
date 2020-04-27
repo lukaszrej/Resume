@@ -7,6 +7,7 @@ module.exports = {
     charSet: `utf-8`,
     robots: `noindex, nofollow `,
   },
+  pathPrefix: "/resume",
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
