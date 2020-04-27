@@ -10,7 +10,7 @@ export default () => {
 
     return (
         <section className="c-section p-skills">
-            <header><h2 className="c-title">Skills</h2></header>
+            <header><h2 className="c-section__title">Skills</h2></header>
             { items }
         </section>
     );

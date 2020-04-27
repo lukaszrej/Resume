@@ -6,7 +6,7 @@ export default () => {
 
     return (
         <section className="c-section p-profile">
-            <header><h2 className="c-title">Profile</h2></header>
+            <header><h2 className="c-section__title">Profile</h2></header>
             <p>{ profile }</p>
         </section>
     );

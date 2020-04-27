@@ -6,17 +6,19 @@ export default () => {
 
     const items = projects.map((element, index) => (
         <>
-            <h3 className="p-projects__title" key={index}>{ element.name }</h3>
-            <p className="p-projects__description">{ element.description.technologies }</p>
-            <p className="p-projects__description">{ element.description.demo }</p>
-            <ul className="c-list">{ element.description.points.map(item => <li>{ item }</li>) }</ul>
+            <article className="c-project">
+                <h3 className="c-project__title" key={index}>{ element.name }</h3>
+                <p className="c-project__techs">{ element.description.technologies }</p>
+                <p className="c-project__link">{ element.description.demo }</p>
+                <ul className="c-project__list">{ element.description.points.map(item => <li>{ item }</li>) }</ul>
+            </article>
         </>)
     );
 
     return (
-        <section className="c-section p-projects">
-            <header><h2 className="c-title">Projects</h2></header>
-            <article>{ items }</article>
+        <section className="c-section">
+            <header><h2 className="c-section__title">Projects</h2></header>
+            { items }
         </section>
     );
 };

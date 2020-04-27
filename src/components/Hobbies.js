@@ -8,7 +8,7 @@ export default () => {
 
     return (
         <section className="c-section p-hobbies">
-            <header><h2 className="c-title">Hobbies</h2></header>
+            <header><h2 className="c-section__title">Hobbies</h2></header>
             <ul className="c-list">{ items }</ul>
         </section>
     );

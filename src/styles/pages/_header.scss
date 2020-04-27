@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 
   &__title {
     margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
   }
 
   &__button {

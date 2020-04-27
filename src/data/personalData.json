@@ -65,17 +65,24 @@
   "education": [
     {
       "school": "CodersLab IT School",
-      "dates": "10/2018 –06/2019",
+      "dates": "10/2018 – 06/2019",
       "field": "Field of study: JavaScript Developer: React",
       "scope": "Thematic scope: HTML, CSS, JavaScript, SASS, RWD, jQuery, ECMAScript 6, Git, React JS",
       "degree": null
     },
     {
       "school": "University of Lodz",
-      "dates": "10/2007 – 06/2010 and 10/2010 – 06/2012",
+      "dates": "10/2010 – 06/2012",
       "field": "Field of study: International Relations",
       "scope": "Specialization: German studies",
-      "degree": "Degree: Bachelor/Master of International Relations"
+      "degree": "Degree: Master of International Relations"
+    },
+    {
+      "school": "University of Lodz",
+      "dates": "10/2007 – 06/2010",
+      "field": "Field of study: International Relations",
+      "scope": "Specialization: German studies",
+      "degree": "Degree: Bachelor of International Relations"
     }
   ],
   "skills": [

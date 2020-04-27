@@ -22,7 +22,7 @@ export default () => {
                 `}
             />
             <section className="c-section p-info">
-                <header><h2 className="c-title">Social media</h2></header>
+                <header><h2 className="c-section__title">Social media</h2></header>
                 <ul className="c-list">
                     <li>
                         <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="c-link">

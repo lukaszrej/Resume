@@ -6,15 +6,17 @@ export default () => {
 
     const items = experience.map((element, index) => (
         <>
-            <h3 key={index}>{ element.company }</h3>
-            <h4>{ element.dates } { element.position }</h4>
-            <ul className="c-list">{ element.tasks.map(task => <li>{ task }</li>) }</ul>
+            <article className="c-institution">
+                <h3 className="c-institution__title" key={index}>{ element.company }</h3>
+                <h4 className="c-institution__description">{ element.dates } { element.position }</h4>
+                <ul className="c-list c-list__small">{ element.tasks.map(task => <li>{ task }</li>) }</ul>
+            </article>
         </>)
     );
 
     return (
-        <section className="c-section p-experience">
-            <header><h2 className="c-title">Work Experience</h2></header>
+        <section className="c-section">
+            <header><h2 className="c-section__title">Work Experience</h2></header>
             { items }
         </section>
     );
