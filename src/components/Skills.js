@@ -9,7 +9,7 @@ export default () => {
     ));
 
     return (
-        <section className="c-section p-skills">
+        <section className="c-section">
             <header><h2 className="c-section__title">Skills</h2></header>
             { items }
         </section>

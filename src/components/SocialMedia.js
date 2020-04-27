@@ -17,8 +17,8 @@ export default () => {
         <>
             <Global
                 styles={css`
-                    .p-info__linkedIn { background-image: url("${state.isDark ? theme.dark.linkedInWhite : theme.light.linkedInBlack}") }
-                    .p-info__github { background-image: url("${state.isDark ? theme.dark.githubWhite : theme.light.githubBlack}") }
+                    .p-social__linkedIn { background-image: url("${state.isDark ? theme.dark.linkedInWhite : theme.light.linkedInBlack}") }
+                    .p-social__github { background-image: url("${state.isDark ? theme.dark.githubWhite : theme.light.githubBlack}") }
                 `}
             />
             <section className="c-section p-info">
@@ -26,12 +26,12 @@ export default () => {
                 <ul className="c-list">
                     <li>
                         <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-info__linkedIn"/>{ linkedInTitle }
+                            <i className="c-icon p-social__linkedIn"/>{ linkedInTitle }
                         </a>
                     </li>
                     <li>
                         <a href={githubURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-info__github"/>{ githubTitle }
+                            <i className="c-icon p-social__github"/>{ githubTitle }
                         </a>
                     </li>
                 </ul>

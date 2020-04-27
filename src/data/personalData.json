@@ -111,7 +111,8 @@
       "name": "Calorie Counter - React JS",
       "description": {
         "technologies": "Technologies: ReactJS (React Router, React DOM), SASS",
-        "demo": "Demo: https://lukaszrej.github.io/Calorie-Counter_ReactJS/",
+        "demo": "lukaszrej.github.io/Calorie-Counter_ReactJS",
+        "url": "https://lukaszrej.github.io/Calorie-Counter_ReactJS/",
         "points": [
           "Fetching data from an external API",
           "React's Hash Router",
@@ -123,7 +124,8 @@
       "name": "Blog - Gatsby JS",
       "description": {
         "technologies": "Technologies: GatsbyJS, Strapi, SCSS",
-        "demo": "Demo: https://lukaszrej.github.io/Blog/",
+        "demo": "lukaszrej.github.io/Blog",
+        "url": "https://lukaszrej.github.io/Blog/",
         "points": [
           "Fetching posts directly from headless CMS - Strapi",
           "Clean code/BEM/DRY"
@@ -134,7 +136,8 @@
       "name": "To-Do-List - JavaScript",
       "description": {
         "technologies": "Technologies: JavaScript, HTML5, CSS3",
-        "demo": "Demo: https://lukaszrej.github.io/To-Do-List_JavaScript/",
+        "demo": "lukaszrej.github.io/To-Do-List_JavaScript",
+        "url": "https://lukaszrej.github.io/To-Do-List_JavaScript/",
         "points": [
           "Responsive to-do-list written in plain Vanilla JS and CSS"
         ]
@@ -144,7 +147,8 @@
       "name": "Sit-On-Chair",
       "description": {
         "technologies": "Technologies: HTML5, CSS3, JavaScript",
-        "demo": "Demo: https://lukaszrej.github.io/SitOnChair/",
+        "demo": "lukaszrej.github.io/SitOnChair",
+        "url": "https://lukaszrej.github.io/SitOnChair/",
         "points": [
           "Fully functional and responsive website"
         ]
@@ -154,7 +158,8 @@
       "name": "Mailing",
       "description": {
         "technologies": "Technology: HTML",
-        "demo": "Demo: https://lukaszrej.github.io/Mailing/",
+        "demo": "lukaszrej.github.io/Mailing",
+        "url": "https://lukaszrej.github.io/Mailing/",
         "points": [
           "Coded without external stylesheets"
         ]

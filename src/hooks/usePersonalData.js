@@ -35,6 +35,7 @@ const usePersonalData = () => {
                             description {
                                 technologies
                                 demo
+                                url
                                 points
                             }
                         }

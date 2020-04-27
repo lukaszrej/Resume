@@ -22,7 +22,7 @@ export default () => {
                 <header><h2 className="c-section__title">Contact</h2></header>
                 <address>
                     <i className="c-icon p-contact__location"/>{ contact.location }
-                    <a className="c-link"href={`tel:${contact.phone}`}><i className="c-icon p-contact__phone"/>{ contact.phone }</a>
+                    <a className="c-link" href={`tel:${contact.phone}`}><i className="c-icon p-contact__phone"/>{ contact.phone }</a>
                     <a className="c-link" href="mailto:rejlukasz@gmail.com"><i className="c-icon p-contact__mail"/>{ contact.email }</a>
                 </address>
             </section>

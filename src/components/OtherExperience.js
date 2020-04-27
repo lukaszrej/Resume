@@ -14,7 +14,7 @@ export default () => {
     );
 
     return (
-        <section className="c-section p-other-experience">
+        <section className="c-section">
             <header><h2 className="c-section__title">Other experience</h2></header>
             { items }
         </section>
