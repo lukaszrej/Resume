@@ -8,7 +8,8 @@ export default () => {
         <>
             <article className="c-institution">
                 <h3 className="c-institution__title" key={index}>{element.school} {element.dates}</h3>
-                <h4 className="c-institution__description">{element.field}{element.scope}</h4>
+                <h4 className="c-institution__description">{element.field}</h4>
+                <h4 className="c-institution__description">{element.scope}</h4>
                 { element.degree ? <p className="c-institution__description">{element.degree}</p> : "" }
             </article>
         </>)

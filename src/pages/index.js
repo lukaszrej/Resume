@@ -9,7 +9,6 @@ import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import SocialMedia from "../components/SocialMedia";
 import Languages from "../components/Languages";
-import Hobbies from "../components/Hobbies";
 import Consent from "../components/Consent";
 import Head from "../components/Head";
 
@@ -26,7 +25,6 @@ const IndexPage = () => (
                     <Education/>
                     <SocialMedia/>
                     <Languages/>
-                    <Hobbies/>
                 </div>
                 <div>
                     <WorkExperience/>

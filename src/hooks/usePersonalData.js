@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const usePersonalData = () => {
+export default () => {
     const data = useStaticQuery(
         graphql`
             query PersonalData {
@@ -52,7 +52,6 @@ const usePersonalData = () => {
                             position
                         }
                         languages
-                        hobbies
                         consent
                     }
                 }
@@ -62,5 +61,3 @@ const usePersonalData = () => {
 
     return data.allDataJson.nodes[0];
 };
-
-export default usePersonalData;

@@ -33,6 +33,7 @@ export default () => {
                 <header><h1 className="p-header__title">{ name }</h1></header>
                 <div className='p-header__button'
                      onClick={ () => dispatch({type: "TOGGLE_DARK_MODE" }) }
+                     onKeyDown={ () => dispatch({type: "TOGGLE_DARK_MODE" }) }
                      role="button" tabIndex="0" />
             </div>
         </>
