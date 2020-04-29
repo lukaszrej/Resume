@@ -1,4 +1,5 @@
 import React  from "react";
+import "../styles/main.scss"
 import { Link } from "gatsby";
 import Head from "../components/Head";
 
