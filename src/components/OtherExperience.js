@@ -4,13 +4,12 @@ import usePersonalData from "../hooks/usePersonalData";
 export default () => {
     const { otherExperience } = usePersonalData();
 
-    const items = otherExperience.map((element, index) => (
-        <>
+    const items = otherExperience.map((element) => (
             <article className="c-institution">
-                <h3 className="c-institution__title" key={index}>{ element.company }</h3>
+                {element.company ? <h3 className="c-institution__title">{ element.company }</h3> : ""}
                 <h4 className="c-institution__description">{ element.dates } { element.position }</h4>
             </article>
-        </>)
+        )
     );
 
     return (

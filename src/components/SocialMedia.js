@@ -17,21 +17,21 @@ export default () => {
         <>
             <Global
                 styles={css`
-                    .p-social__linkedIn { background-image: url("${state.isDark ? theme.dark.linkedInWhite : theme.light.linkedInBlack}") }
-                    .p-social__github { background-image: url("${state.isDark ? theme.dark.githubWhite : theme.light.githubBlack}") }
+                    .p-social-media__linkedIn { background-image: url("${state.isDark ? theme.dark.linkedInWhite : theme.light.linkedInBlack}") }
+                    .p-social-media__github { background-image: url("${state.isDark ? theme.dark.githubWhite : theme.light.githubBlack}") }
                 `}
             />
-            <section className="c-section p-info">
+            <section className="c-section p-social-media">
                 <header><h2 className="c-section__title">Social media</h2></header>
                 <ul className="c-list">
                     <li>
                         <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-social__linkedIn"/>{ linkedInTitle }
+                            <i className="c-icon p-social-media__linkedIn"/>{ linkedInTitle }
                         </a>
                     </li>
                     <li>
                         <a href={githubURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-social__github"/>{ githubTitle }
+                            <i className="c-icon p-social-media__github"/>{ githubTitle }
                         </a>
                     </li>
                 </ul>
