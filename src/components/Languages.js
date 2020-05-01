@@ -4,7 +4,7 @@ import usePersonalData from "../hooks/usePersonalData";
 export default () => {
     const { languages } = usePersonalData();
 
-    const items = languages.map((language, index) => <li key={index}>{ language }</li>);
+    const items = languages.map(language => <li key={language.id}>{ language.label }</li>);
 
     return (
         <section className="c-section">

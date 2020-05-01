@@ -5,7 +5,7 @@ export default () => {
     const { projects } = usePersonalData();
 
     const items = projects.map((element) => (
-        <article className="c-project">
+        <article className="c-project" key={element.id}>
             <a className="c-link" href={element.description.url} target="_blank" rel="noopener noreferrer">
                 <h3 className="c-project__title">{ element.name }</h3>
             </a>
@@ -13,7 +13,9 @@ export default () => {
             <p className="c-project__link">
                 Demo: <a href={element.description.url} className="c-link c-link__inline">{ element.description.demo }</a>
             </p>
-            <ul className="c-project__list">{ element.description.points.map(item => <li>{ item }</li>) }</ul>
+            <ul className="c-project__list">
+                { element.description.points.map(item => <li key={item}>{ item }</li>) }
+            </ul>
         </article>)
     );
 

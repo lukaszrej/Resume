@@ -4,7 +4,7 @@ import usePersonalData from "../hooks/usePersonalData";
 export default () => {
     const { skills } = usePersonalData();
 
-    const items = skills.map((skill, index) => <li className="c-tags__tag" key={index}>{ skill }</li>);
+    const items = skills.map((skill) => <li className="c-tags__tag" key={skill.id}>{ skill.label }</li>);
 
     return (
         <section className="c-section">

@@ -13,24 +13,25 @@ export default () => {
                             phone
                             email
                         }
-                        skills
-                        info {
-                            linkedIn {
-                                title
-                                url
-                            }
-                            github {
-                                title
-                                url
-                            }
+                        skills {
+                            id
+                            label
                         }
-                        experience {
+                        socialMedia {
+                            linkedInLabel
+                            linkedInUrl
+                            githubLabel
+                            githubUrl
+                        }
+                        workExperience {
+                            id
                             company
                             dates
                             position
                             tasks
                         }
                         projects {
+                            id
                             name
                             description {
                                 technologies
@@ -40,6 +41,7 @@ export default () => {
                             }
                         }
                         education {
+                            id
                             school
                             dates
                             field
@@ -47,11 +49,15 @@ export default () => {
                             degree
                         }
                         otherExperience {
+                            id
                             company
                             dates
                             position
                         }
-                        languages
+                        languages {
+                            id
+                            label
+                        }
                         consent
                     }
                 }

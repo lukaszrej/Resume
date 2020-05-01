@@ -5,7 +5,7 @@ export default () => {
     const { otherExperience } = usePersonalData();
 
     const items = otherExperience.map((element) => (
-            <article className="c-institution">
+            <article className="c-institution" key={element.id}>
                 {element.company ? <h3 className="c-institution__title">{ element.company }</h3> : ""}
                 <h4 className="c-institution__description">{ element.dates } { element.position }</h4>
             </article>

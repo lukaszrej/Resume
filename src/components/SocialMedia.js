@@ -5,13 +5,13 @@ import { useTheme } from "emotion-theming";
 import Context from "../store/context";
 
 export default () => {
-    const { info } = usePersonalData();
+    const { socialMedia } = usePersonalData();
     const { state } = useContext(Context);
     const theme = useTheme();
-    const linkedInURL = info.linkedIn.map( element => element.url);
-    const linkedInTitle = info.linkedIn.map( element => element.title);
-    const githubURL = info.github.map( element => element.url);
-    const githubTitle = info.github.map( element => element.title);
+    const linkedInURL = socialMedia.linkedInLabel;
+    const linkedInLabel = socialMedia.linkedInUrl;
+    const githubURL = socialMedia.githubLabel;
+    const githubLabel = socialMedia.githubUrl;
 
     return (
         <>
@@ -26,12 +26,12 @@ export default () => {
                 <ul className="c-list">
                     <li>
                         <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-social-media__linkedIn"/>{ linkedInTitle }
+                            <i className="c-icon p-social-media__linkedIn"/>{ linkedInLabel }
                         </a>
                     </li>
                     <li>
                         <a href={githubURL} target="_blank" rel="noopener noreferrer" className="c-link">
-                            <i className="c-icon p-social-media__github"/>{ githubTitle }
+                            <i className="c-icon p-social-media__github"/>{ githubLabel }
                         </a>
                     </li>
                 </ul>

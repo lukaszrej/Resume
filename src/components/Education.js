@@ -5,7 +5,7 @@ export default () => {
     const { education } = usePersonalData();
 
     const items = education.map((element) => (
-        <article className="c-institution">
+        <article className="c-institution" key={element.id}>
             <h3 className="c-institution__title">{element.school} {element.dates}</h3>
             <h4 className="c-institution__description">{element.field}</h4>
             <h4 className="c-institution__description">{element.scope}</h4>
