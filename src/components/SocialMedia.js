@@ -8,10 +8,11 @@ export default () => {
     const { socialMedia } = usePersonalData();
     const { state } = useContext(Context);
     const theme = useTheme();
-    const linkedInURL = socialMedia.linkedInLabel;
-    const linkedInLabel = socialMedia.linkedInUrl;
-    const githubURL = socialMedia.githubLabel;
-    const githubLabel = socialMedia.githubUrl;
+
+    const linkedInURL = socialMedia.linkedInUrl;
+    const linkedInLabel = socialMedia.linkedInLabel;
+    const githubURL = socialMedia.githubUrl;
+    const githubLabel = socialMedia.githubLabel;
 
     return (
         <>
