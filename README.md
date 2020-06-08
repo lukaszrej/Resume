@@ -1,7 +1,7 @@
 # Resume
 
 ### Demo
-See my resume [here](https://lukaszrej.github.io/resume/).
+See my resume [here](https://lukaszrej.github.io/Resume/).
 
 ### Technologies used for this project
 
