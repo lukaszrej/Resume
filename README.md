@@ -18,6 +18,6 @@ See my resume [here](https://lukaszrej.github.io/Resume/).
 
 #### Preview
 
-![View](./src/images/_light-view.png "Resume - light mode page view")
+![View](./src/images/demo/light-view.png "Resume - light mode page view")
 
-![View](./src/images/_dark-view.png "Resume - dark mode page view")
+![View](./src/images/demo/dark-view.png "Resume - dark mode page view")

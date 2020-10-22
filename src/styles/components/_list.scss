@@ -1,14 +1,14 @@
 .c-list {
-  list-style-type: none;
-  margin: 0;
+    list-style-type: none;
+    margin: 0;
 
-  & > li {
-    margin-bottom: .2rem;
-  }
+    &>li {
+        margin-bottom: .2rem;
+    }
 }
 
 .c-list__small {
-  & > li {
-    font-size: .8rem;
-  }
+    &>li {
+        font-size: .8rem;
+    }
 }

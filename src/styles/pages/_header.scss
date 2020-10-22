@@ -1,24 +1,24 @@
 .p-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
 
-  &__title {
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
 
-  &__button {
-    background-repeat: no-repeat;
-    background-size: 28px;
-    height: 28px;
-    width: 28px;
-    border: none;
-  }
+    &__button {
+        background-repeat: no-repeat;
+        background-size: 28px;
+        height: 28px;
+        width: 28px;
+        border: none;
+    }
 
-  &__button:focus {
-    outline: 0;
-  }
+    &__button:focus {
+        outline: 0;
+    }
 }

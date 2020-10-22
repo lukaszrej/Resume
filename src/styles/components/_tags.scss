@@ -1,15 +1,15 @@
 .c-tags {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin: -0.5rem 0px 0px;
-  padding: 0px;
-  list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -0.5rem 0px 0px;
+    padding: 0px;
+    list-style: none;
 
-  &__tag {
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    background-color: rgb(237, 242, 247);
-    color: rgb(74, 85, 104);
-    padding: .15rem .85rem;
-  }
+    &__tag {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+        background-color: #cad9e7;
+        color: rgb(74, 85, 104);
+        padding: .15rem .85rem;
+    }
 }
