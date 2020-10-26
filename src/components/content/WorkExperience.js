@@ -1,5 +1,5 @@
 import React from "react";
-import usePersonalData from "../hooks/usePersonalData";
+import usePersonalData from "../../data/hooks/usePersonalData";
 
 export default () => {
     const { workExperience } = usePersonalData();

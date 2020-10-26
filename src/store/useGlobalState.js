@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import storage from "local-storage-fallback";
 
-const reducer = (state, action) => {
+const darkModeReducer = (state, action) => {
     switch (action.type) {
         case "TOGGLE_DARK_MODE":
             storage.setItem("isDark", !state.isDark);
@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 };
 
 const useGlobalState = () => {
-    const [ state, dispatch ] = useReducer(reducer, {
+    const [state, dispatch] = useReducer(darkModeReducer, {
         isDark: storage.getItem("isDark") ? JSON.parse(storage.getItem("isDark")) : false
     });
 

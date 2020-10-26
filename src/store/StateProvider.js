@@ -2,12 +2,12 @@ import React from "react";
 import useGlobalState from "./useGlobalState";
 import Context from "./context";
 
-const GlobalStateProvider = ({ children }) => {
+const StateProvider = ({ children }) => {
     return (
-        <Context.Provider value={useGlobalState()}>
-            {children}
+        <Context.Provider value={ useGlobalState() }>
+            { children }
         </Context.Provider>
     );
 };
 
-export default GlobalStateProvider;
+export default StateProvider;

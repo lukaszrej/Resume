@@ -34,7 +34,7 @@ module.exports = {
                 description: `It's just my resume.`,
                 lang: `en`,
                 display: `standalone`,
-                icon: `src/images/favicons/favicon.png`,
+                icon: `src/data/images/favicons/favicon.png`,
                 start_url: `/`,
                 background_color: `#663399`,
                 theme_color: `#fff`,

@@ -1,12 +1,12 @@
-import React from "react"
-import { ThemeProvider } from "emotion-theming"
-import GlobalStateProvider from "./src/store/GlobalStateProvider"
-import { theme } from "./src/theme/theme"
+import React from "react";
+import StateProvider from "./src/store/StateProvider";
+import { ThemeProvider } from "emotion-theming";
+import { theme } from "./src/utils/theme";
 
 export const wrapRootElement = ({ element }) => (
-    <GlobalStateProvider>
-        <ThemeProvider theme={theme}>
-            {element}
+    <StateProvider>
+        <ThemeProvider theme={ theme }>
+            { element }
         </ThemeProvider>
-    </GlobalStateProvider>
-)
+    </StateProvider>
+);

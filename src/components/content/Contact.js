@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
-import usePersonalData from "../hooks/usePersonalData";
+import usePersonalData from "../../data/hooks/usePersonalData";
 import {css, Global} from "@emotion/core";
 import { useTheme } from "emotion-theming";
-import Context from "../store/context";
+import Context from "../../store/context";
 
 export default () => {
     const { contact } = usePersonalData();
