@@ -1,22 +1,24 @@
-.c-project {
+import styled from 'styled-components';
+
+export default styled.article`
     margin-bottom: 12px;
 
-    &__title {
+    & h3 {
         margin-bottom: 0;
         font-size: 1.2rem;
     }
 
-    &__techs {
+    & p {
         font-size: .8rem;
         margin-bottom: 3px;
     }
 
-    &__link {
+    & p:last-child {
         margin-bottom: 3px;
         font-size: .8rem;
     }
 
-    &__list {
+    & ul {
         list-style-type: none;
         margin: 0;
 
@@ -25,4 +27,4 @@
             margin-bottom: .2rem;
         }
     }
-}
+`;

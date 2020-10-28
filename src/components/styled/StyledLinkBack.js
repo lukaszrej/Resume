@@ -1,4 +1,6 @@
-.c-button {
+import styled from 'styled-components';
+
+export default styled.a`
     display: inline-flex;
     flex-wrap: wrap;
     background-color: rgb(237, 242, 247);
@@ -11,4 +13,4 @@
         transition: color .4s ease;
         text-decoration: underline;
     }
-}
+`;

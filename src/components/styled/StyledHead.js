@@ -1,24 +1,26 @@
-.p-header {
+import styled from 'styled-components';
+
+export default styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 64px;
 
-    &__title {
+    & h1 {
         margin: 0;
         text-transform: uppercase;
         font-weight: 400;
     }
 
-    &__button {
+    & button {
         background-repeat: no-repeat;
         background-size: 28px;
         height: 28px;
         width: 28px;
         border: none;
-    }
 
-    &__button:focus {
-        outline: 0;
+        &:focus {
+            outline: 0;
+        }
     }
-}
+`;

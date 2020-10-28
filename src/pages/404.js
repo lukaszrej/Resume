@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import "../styles/main.scss"
-import { Link } from "gatsby";
+import StyledSection from "../components/styled/StyledSection";
+import StyledLinkBack from "../components/styled/StyledLinkBack";
 import Head from "../components/Head";
+import Container from "../components/Container";
 import Context from "../store/context";
 import { css, Global } from "@emotion/core";
 import { useTheme } from "emotion-theming";
@@ -15,17 +16,17 @@ export default () => {
             <Global
                 styles={ css`                    
                     body { background-color: ${state.isDark ? theme.dark.background : theme.light.background} }
-                    h1, p, a { color: ${state.isDark ? theme.dark.fontColor : theme.light.fontColor} }
+                    h1, p { color: ${state.isDark ? theme.dark.fontColor : theme.light.fontColor} }
                 `}
             />
-            <main className="p-container">
+            <Container>
                 <Head />
-                <section className="c-section">
-                    <h1 className="c-section__title">Section not found</h1>
+                <StyledSection>
+                    <h1>Section not found</h1>
                     <p>The page wasn't found. Go back to see the resume.</p>
-                    <Link to="/" className="c-button">go back</Link>
-                </section>
-            </main>
+                    <StyledLinkBack href="/">go back</StyledLinkBack>
+                </StyledSection>
+            </Container>
         </>
     )
 };

@@ -3,6 +3,9 @@ import usePersonalData from "../../data/hooks/usePersonalData";
 import {css, Global} from "@emotion/core";
 import { useTheme } from "emotion-theming";
 import Context from "../../store/context";
+import StyledSection from "../styled/StyledSection";
+import StyledIcon from "../styled/StyledIcon";
+import StyledLink from "../styled/StyledLink";
 
 export default () => {
     const { contact } = usePersonalData();
@@ -18,14 +21,20 @@ export default () => {
                     .p-contact__mail { background-image: url("${state.isDark ? theme.dark.mailWhite : theme.light.mailBlack}") }
                 `}
             />
-            <section className="c-section p-contact">
-                <header><h2 className="c-section__title">Contact</h2></header>
+            <StyledSection className="p-contact">
+                <header><h2>Contact</h2></header>
                 <address>
-                    <i className="c-icon p-contact__location"/>{ contact.location }
-                    <a className="c-link" href={`tel:${contact.phone}`}><i className="c-icon p-contact__phone"/>{ contact.phone }</a>
-                    <a className="c-link" href="mailto:rejlukasz@gmail.com"><i className="c-icon p-contact__mail"/>{ contact.email }</a>
+                    <StyledIcon className="p-contact__location"/>{ contact.location }
+
+                    <StyledLink href={`tel:${contact.phone}`}>
+                        <StyledIcon className="p-contact__phone"/>{ contact.phone }
+                    </StyledLink>
+
+                    <StyledLink href="mailto:rejlukasz@gmail.com">
+                        <StyledIcon className="p-contact__mail"/>{ contact.email }
+                    </StyledLink>
                 </address>
-            </section>
+            </StyledSection>
         </>
     );
 };

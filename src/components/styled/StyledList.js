@@ -1,14 +1,10 @@
-.c-list {
+import styled from 'styled-components';
+
+export default styled.ul`
     list-style-type: none;
     margin: 0;
 
     &>li {
         margin-bottom: .2rem;
     }
-}
-
-.c-list__small {
-    &>li {
-        font-size: .8rem;
-    }
-}
+`;

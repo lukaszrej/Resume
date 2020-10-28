@@ -1,8 +1,13 @@
 import React from "react";
 import usePersonalData from "../data/hooks/usePersonalData";
+import StyledConsent from "./styled/StyledConsent";
 
 export default () => {
     const { consent } = usePersonalData();
 
-    return <section className="p-consent"><p>{ consent }</p></section>;
+    return (
+        <StyledConsent>
+            { consent }
+        </StyledConsent>
+    );
 };

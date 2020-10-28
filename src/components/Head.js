@@ -5,6 +5,7 @@ import { useTheme } from "emotion-theming";
 import Context from "../store/context";
 import useSiteMetadata from "../data/hooks/useSiteMetadata";
 import usePersonalData from "../data/hooks/usePersonalData";
+import StyledHead from "../components/styled/StyledHead";
 
 export default () => {
     const { state, dispatch } = useContext(Context);
@@ -26,16 +27,15 @@ export default () => {
                 styles={ css`                    
                     body { background-color: ${state.isDark ? theme.dark.background : theme.light.background} }
                     h1, h2, p, div, a { color: ${state.isDark ? theme.dark.fontColor : theme.light.fontColor} }
-                    div.p-header__button { background-image: url("${state.isDark ? theme.dark.sunWhite : theme.light.sunBlack}") }
+                    Button { background-image: url("${state.isDark ? theme.dark.sunWhite : theme.light.sunBlack}"); background-color: transparent }
                 `}
             />
-            <div className="p-header">
-                <header><h1 className="p-header__title">{ name }</h1></header>
-                <div className='p-header__button'
-                    onClick={ () => dispatch({ type: "TOGGLE_DARK_MODE" }) }
-                    onKeyDown={ () => dispatch({ type: "TOGGLE_DARK_MODE" }) }
-                    role="button" tabIndex="0" />
-            </div>
+            <StyledHead>
+                <header>
+                    <h1>{ name }</h1>
+                </header>
+                <button onClick={ () => dispatch({ type: "TOGGLE_DARK_MODE" }) }/>
+            </StyledHead>
         </>
     );
 };

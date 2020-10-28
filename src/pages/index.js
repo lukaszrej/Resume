@@ -1,15 +1,15 @@
 import React from "react";
-import "../styles/main.scss"
+import Container from '../components/Container';
 import Head from "../components/Head";
 import Main from '../components/Main';
 import Consent from "../components/Consent";
 
-const IndexPage = () => (
-    <section className="p-container">
-        <Head/>
-        <Main />
-        <Consent/>
-    </section>
-);
-
-export default IndexPage;
+export default () => {
+    return (
+        <Container>
+            <Head />
+            <Main />
+            <Consent />
+        </Container>
+    );
+};

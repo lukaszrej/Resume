@@ -9,7 +9,6 @@ module.exports = {
     },
     pathPrefix: "/Resume",
     plugins: [
-        `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-emotion`,
         `gatsby-transformer-json`,
@@ -25,6 +24,9 @@ module.exports = {
             options: {
                 pathToConfigModule: `src/utils/typography`,
             },
+        },
+        {
+            resolve: `gatsby-plugin-styled-components`,
         },
         {
             resolve: `gatsby-plugin-manifest`,

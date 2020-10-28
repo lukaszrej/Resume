@@ -1,33 +1,32 @@
 import React from "react";
-import "../styles/main.scss"
-import Profile from "./content/Profile";
-import WorkExperience from "./content/WorkExperience";
-import Projects from "./content/Projects";
-import Education from "./content/Education";
-import OtherExperience from "./content/OtherExperience";
-import Contact from "./content/Contact";
-import Skills from "./content/Skills";
-import SocialMedia from "./content/SocialMedia";
-import Languages from "./content/Languages";
+import StyledMain from "../components/styled/StyledMain";
+import StyledColumn from "../components/styled/StyledColumn";
+import Profile from "./main/Profile";
+import WorkExperience from "./main/WorkExperience";
+import Projects from "./main/Projects";
+import Education from "./main/Education";
+import OtherExperience from "./main/OtherExperience";
+import Contact from "./main/Contact";
+import Skills from "./main/Skills";
+import SocialMedia from "./main/SocialMedia";
+import Languages from "./main/Languages";
 
 export default () => {
     return (
-        <main className="p-main">
-            <div className="p-main__wrapper">
-                <div className="p-main__column">
-                    <Profile />
-                    <Contact />
-                    <Skills />
-                    <Education />
-                    <SocialMedia />
-                    <Languages />
-                </div>
-                <div>
-                    <WorkExperience />
-                    <Projects />
-                    <OtherExperience />
-                </div>
+        <StyledMain>
+            <StyledColumn>
+                <Profile />
+                <Contact />
+                <Skills />
+                <Education />
+                <SocialMedia />
+                <Languages />
+            </StyledColumn>
+            <div>
+                <WorkExperience />
+                <Projects />
+                <OtherExperience />
             </div>
-        </main>
+        </StyledMain>
     );
 };
