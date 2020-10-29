@@ -1,13 +1,13 @@
 import React from "react";
 import Container from '../components/Container';
-import Head from "../components/Head";
+import Header from "../components/Header";
 import Main from '../components/Main';
 import Consent from "../components/Consent";
 
 export default () => {
     return (
         <Container>
-            <Head />
+            <Header />
             <Main />
             <Consent />
         </Container>

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeProvider } from "emotion-theming";
+import Head from "./Head";
 import ResetStyle from "./styled/ResetStyle";
 import Layout from "./styled/Layout";
 import { css, Global } from "@emotion/core";
@@ -14,6 +15,7 @@ export default ({ children }) => {
     return (
         <Layout>
             <ResetStyle />
+            <Head />
 
             <ThemeProvider theme={ theme }>
                 <Global
