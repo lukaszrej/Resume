@@ -22,11 +22,11 @@ export default () => {
                 <SocialMedia />
                 <Languages />
             </StyledColumn>
-            <div>
+            <aside>
                 <WorkExperience />
                 <Projects />
                 <OtherExperience />
-            </div>
+            </aside>
         </StyledMain>
     );
 };
