@@ -1,35 +1,34 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import StyledLink from "../styled/StyledLink";
-import StyledLinkInline from "../styled/StyledLinkInline";
-import StyledProjects from "../styled/StyledProjects";
-import StyledSection from "../styled/StyledSection";
+import { Link } from "../styles/S.Link";
+import { Projects } from "../styles/S.Projects";
+import { Section } from "../styles/S.Section";
 
 export default () => {
     const { projects } = usePersonalData();
 
     const items = projects.map((element) => (
-        <StyledProjects key={element.id}>
-            <StyledLink href={element.description.url} target="_blank" rel="noopener noreferrer">
-                <h3>{ element.name }</h3>
-            </StyledLink>
+        <Projects key={element.id}>
+            <Link href={element.description.url} target="_blank" rel="noopener noreferrer">
+                <h3>{element.name}</h3>
+            </Link>
 
-            <p>{ element.description.technologies }</p>
+            <p>{element.description.technologies}</p>
 
             <p>
-                Demo: <StyledLinkInline href={element.description.url}>{ element.description.demo }</StyledLinkInline>
+                Demo: <Link inline href={element.description.url}>{element.description.demo}</Link>
             </p>
-            
+
             <ul>
-                { element.description.points.map(item => <li key={item}>{ item }</li>) }
+                {element.description.points.map(item => <li key={item}>{item}</li>)}
             </ul>
-        </StyledProjects>)
+        </Projects>)
     );
 
     return (
-        <StyledSection>
+        <Section>
             <header><h2>Projects</h2></header>
-            { items }
-        </StyledSection>
+            { items}
+        </Section>
     );
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export default styled.p`
+export const Consent = styled.p`
     font-size: .8rem;
 `;

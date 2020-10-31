@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.article`
+export const Projects = styled.article`
     margin-bottom: 12px;
 
     & h3 {

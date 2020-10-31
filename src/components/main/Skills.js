@@ -1,17 +1,17 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import StyledSection from "../styled/StyledSection";
-import StyledTags from "../styled/StyledTags";
+import { Section } from "../styles/S.Section";
+import { Tags } from "../styles/S.Tags";
 
 export default () => {
     const { skills } = usePersonalData();
 
-    const items = skills.map((skill) => <li key={skill.id}>{ skill.label }</li>);
+    const items = skills.map((skill) => <li key={skill.id}>{skill.label}</li>);
 
     return (
-        <StyledSection>
+        <Section>
             <header><h2>Skills</h2></header>
-            <StyledTags>{ items }</StyledTags>
-        </StyledSection>
+            <Tags>{items}</Tags>
+        </Section>
     );
 };

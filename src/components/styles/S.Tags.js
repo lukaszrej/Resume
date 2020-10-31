@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.ul`
+export const Tags = styled.ul`
     display: inline-flex;
     flex-wrap: wrap;
     margin: -0.5rem 0px 0px;

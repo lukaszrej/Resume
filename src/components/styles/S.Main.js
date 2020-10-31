@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.main`
+export const Main = styled.main`
     display: flex;
     margin-bottom: 32px;
 

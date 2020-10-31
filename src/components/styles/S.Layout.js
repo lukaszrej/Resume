@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.section`
+export const Layout = styled.section`
     margin: 0 auto;
     height: 91.3509rem;
     max-width: 64.6094rem;

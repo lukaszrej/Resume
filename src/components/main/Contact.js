@@ -1,26 +1,26 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import StyledSection from "../styled/StyledSection";
-import StyledIcon from "../styled/StyledIcon";
-import StyledLink from "../styled/StyledLink";
+import { Section } from "../styles/S.Section";
+import { Icon } from "../styles/S.Icon";
+import { Link } from "../styles/S.Link";
 
 export default () => {
     const { contact } = usePersonalData();
 
     return (
-        <StyledSection className="p-contact">
+        <Section className="p-contact">
             <header><h2>Contact</h2></header>
             <address>
-                <StyledIcon className="p-contact__location" />{ contact.location }
+                <Icon className="p-contact__location" />{contact.location}
 
-                <StyledLink href={ `tel:${contact.phone}` }>
-                    <StyledIcon className="p-contact__phone" />{ contact.phone }
-                </StyledLink>
+                <Link href={`tel:${contact.phone}`}>
+                    <Icon className="p-contact__phone" />{contact.phone}
+                </Link>
 
-                <StyledLink href="mailto:rejlukasz@gmail.com">
-                    <StyledIcon className="p-contact__mail" />{ contact.email }
-                </StyledLink>
+                <Link href="mailto:rejlukasz@gmail.com">
+                    <Icon className="p-contact__mail" />{contact.email}
+                </Link>
             </address>
-        </StyledSection>
+        </Section>
     );
 };

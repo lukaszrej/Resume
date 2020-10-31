@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export const Column = styled.div`
     max-width: 55%;
 
     @media screen and (max-width: 960px) {

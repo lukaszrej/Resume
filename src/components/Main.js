@@ -1,6 +1,6 @@
 import React from "react";
-import StyledMain from "../components/styled/StyledMain";
-import StyledColumn from "../components/styled/StyledColumn";
+import { Main } from "../components/styles/S.Main";
+import { Column } from "../components/styles/S.Column";
 import Profile from "./main/Profile";
 import WorkExperience from "./main/WorkExperience";
 import Projects from "./main/Projects";
@@ -13,20 +13,20 @@ import Languages from "./main/Languages";
 
 export default () => {
     return (
-        <StyledMain>
-            <StyledColumn>
+        <Main>
+            <Column>
                 <Profile />
                 <Contact />
                 <Skills />
                 <Education />
                 <SocialMedia />
                 <Languages />
-            </StyledColumn>
+            </Column>
             <aside>
                 <WorkExperience />
                 <Projects />
                 <OtherExperience />
             </aside>
-        </StyledMain>
+        </Main>
     );
 };

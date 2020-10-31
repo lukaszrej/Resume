@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.section`
+export const Section = styled.section`
     margin-bottom: 16px;
 
     & h1, & h2 {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.a`
+export const Button = styled.button`
     display: inline-flex;
     flex-wrap: wrap;
     background-color: rgb(237, 242, 247);

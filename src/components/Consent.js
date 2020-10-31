@@ -1,13 +1,13 @@
 import React from "react";
 import usePersonalData from "../data/hooks/usePersonalData";
-import StyledConsent from "./styled/StyledConsent";
+import { Consent } from "./styles/S.Consent";
 
 export default () => {
     const { consent } = usePersonalData();
 
     return (
-        <StyledConsent>
+        <Consent>
             { consent }
-        </StyledConsent>
+        </Consent>
     );
 };

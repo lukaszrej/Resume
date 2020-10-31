@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.i`
+export const Icon = styled.i`
     background-repeat: no-repeat;
     background-size: 21px;
     height: 21px;
