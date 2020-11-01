@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-    /* base */
-    body {
-        line-height: 1.625;
-    }
-
-    /* reset */
     html {
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;

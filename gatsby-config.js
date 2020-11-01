@@ -10,7 +10,6 @@ module.exports = {
     pathPrefix: "/Resume",
     plugins: [
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-emotion`,
         `gatsby-transformer-json`,
         {
             resolve: `gatsby-source-filesystem`,
