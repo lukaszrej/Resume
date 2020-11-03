@@ -16,11 +16,12 @@
         {
             "id": 0,
             "company": "Agora SA",
-            "dates": "08/2020 – ...",
-            "position": "Frontend Developer",
+            "dates": "08/2020 – present",
+            "position": "Frontend/React Developer",
             "tasks": [
-                "Work mainly with ReactJS and TypeScript",
-                "Ad hoc job with Google advertisement development (JavaScript)"
+                "Work with React.js and TypeScript",
+                "Ad hoc job with advertisement development in plain JavaScript",
+                "Code review and daily reporting (Scrum)"
             ]
         },
         {
@@ -29,10 +30,9 @@
             "dates": "12/2019 – 05/2020",
             "position": "Junior Frontend Developer",
             "tasks": [
-                "Working on the biggest Miinto project - SEO",
-                "Frontend of the project (plain JS, Twig, SCSS)",
-                "Administration and SEO panel (Bootstrap, jQuery)",
-                "Miinterface - working on library of components for internal usage",
+                "Work with plain JS, Twig (template engine), SCSS",
+                "Creation of administration and SEO panels (Bootstrap, jQuery)",
+                "Co-working on library of internal components (React.js)",
                 "Code review and daily reporting (Scrum)"
             ]
         }
