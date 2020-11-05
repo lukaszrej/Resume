@@ -1,18 +1,16 @@
-import React, { useContext } from "react";
-import Context from "../store/context";
+import React from "react";
 import usePersonalData from "../data/hooks/usePersonalData";
-import { Header } from "./styles/S.Header";
+import * as S from "./styles";
 
 export default () => {
-    const { dispatch } = useContext(Context);
     const { name } = usePersonalData();
 
     return (
-        <Header>
-            <header><h1>{name}</h1></header>
+        <S.Header>
+            <header><h1>{ name }</h1></header>
             <button
                 aria-label="Toggle dark mode"
-                onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })} />
-        </Header>
+                onClick={ console.log('header clicked') } />
+        </S.Header>
     );
 };

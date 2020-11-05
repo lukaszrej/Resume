@@ -1,14 +1,14 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import { Section } from "../styles/S.Section";
+import * as S from "../styles";
 
 export default () => {
     const { profile } = usePersonalData();
 
     return (
-        <Section>
+        <S.Section>
             <header><h2>Profile</h2></header>
             <p>{profile}</p>
-        </Section>
+        </S.Section>
     );
 };

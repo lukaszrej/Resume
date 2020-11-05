@@ -1,28 +1,24 @@
-import React, { useContext } from "react";
+import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import Context from "../../store/context";
-import { Section } from "../styles/S.Section";
-import { Link } from "../styles/S.Link";
-import { LocationIcon, PhoneIcon, MailIcon } from "../styles/S.Icon";
+import * as S from "../styles";
 
 export default () => {
-    const { state } = useContext(Context);
     const { contact } = usePersonalData();
 
     return (
-        <Section className="p-contact">
+        <S.Section>
             <header><h2>Contact</h2></header>
             <address>
-                <LocationIcon isDark={state.isDark} />{contact.location}
+                <S.LocationIcon />{ contact.location }
 
-                <Link href={`tel:${contact.phone}`}>
-                    <PhoneIcon isDark={state.isDark} />{contact.phone}
-                </Link>
+                <S.Link href={ `tel:${contact.phone}` }>
+                    <S.PhoneIcon />{ contact.phone }
+                </S.Link>
 
-                <Link href="mailto:rejlukasz@gmail.com">
-                    <MailIcon isDark={state.isDark} />{contact.email}
-                </Link>
+                <S.Link href="mailto:rejlukasz@gmail.com">
+                    <S.MailIcon />{ contact.email }
+                </S.Link>
             </address>
-        </Section>
+        </S.Section>
     );
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import { Section } from "../styles/S.Section";
-import { List } from "../styles/S.List";
+import * as S from "../styles";
 
 export default () => {
     const { languages } = usePersonalData();
@@ -9,13 +8,13 @@ export default () => {
     const items = languages.map(language => <li key={language.id}>{language.label}</li>);
 
     return (
-        <Section>
+        <S.Section>
             <header>
                 <h2>Languages</h2>
             </header>
-            <List>
+            <S.List>
                 {items}
-            </List>
-        </Section>
+            </S.List>
+        </S.Section>
     );
 };

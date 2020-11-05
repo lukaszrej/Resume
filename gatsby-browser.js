@@ -1,4 +1,10 @@
-import React from "react";
-import StateProvider from "./src/store/StateProvider";
+import React from 'react';
+import GlobalContextProvider from "./src/store/GlobalContextProvider";
 
-export const wrapRootElement = ({ element }) => <StateProvider>{ element }</StateProvider>;
+export const wrapRootElement = ({ element }) => {
+    return (
+        <GlobalContextProvider>
+            { element }
+        </GlobalContextProvider>
+    )
+}

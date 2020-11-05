@@ -1,23 +1,22 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import { Institution } from "../styles/S.Institution";
-import { Section } from "../styles/S.Section";
+import * as S from "../styles";
 
 export default () => {
     const { otherExperience } = usePersonalData();
 
     const items = otherExperience.map((element) => (
-        <Institution key={element.id}>
+        <S.Institution key={element.id}>
             {element.company ? <h3>{element.company}</h3> : ""}
             <h4>{element.dates} {element.position}</h4>
-        </Institution>
+        </S.Institution>
     )
     );
 
     return (
-        <Section>
+        <S.Section>
             <header><h2>Other experience</h2></header>
             { items}
-        </Section>
+        </S.Section>
     );
 };

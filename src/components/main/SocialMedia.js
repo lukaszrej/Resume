@@ -1,13 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import Context from "../../store/context";
-import { Section } from "../styles/S.Section";
-import { List } from "../styles/S.List";
-import { Link } from "../styles/S.Link";
-import { LinkedInIcon, GithubIcon } from "../styles/S.Icon";
+import * as S from "../styles";
 
 export default () => {
-    const { state } = useContext(Context);
     const { socialMedia } = usePersonalData();
 
     const linkedInURL = socialMedia.linkedInUrl;
@@ -16,21 +11,21 @@ export default () => {
     const githubLabel = socialMedia.githubLabel;
 
     return (
-        <Section>
+        <S.Section>
             <header><h2>Social media</h2></header>
 
-            <List>
+            <S.List>
                 <li>
-                    <Link href={linkedInURL} target="_blank" rel="noopener noreferrer">
-                        <LinkedInIcon isDark={state.isDark} />{linkedInLabel}
-                    </Link>
+                    <S.Link href={ linkedInURL } target="_blank" rel="noopener noreferrer">
+                        <S.LinkedInIcon />{ linkedInLabel }
+                    </S.Link>
                 </li>
                 <li>
-                    <Link href={githubURL} target="_blank" rel="noopener noreferrer">
-                        <GithubIcon isDark={state.isDark} />{githubLabel}
-                    </Link>
+                    <S.Link href={ githubURL } target="_blank" rel="noopener noreferrer">
+                        <S.GithubIcon />{ githubLabel }
+                    </S.Link>
                 </li>
-            </List>
-        </Section>
+            </S.List>
+        </S.Section>
     );
 };

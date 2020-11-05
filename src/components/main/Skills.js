@@ -1,7 +1,6 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import { Section } from "../styles/S.Section";
-import { Tags } from "../styles/S.Tags";
+import * as S from "../styles";
 
 export default () => {
     const { skills } = usePersonalData();
@@ -9,9 +8,9 @@ export default () => {
     const items = skills.map((skill) => <li key={skill.id}>{skill.label}</li>);
 
     return (
-        <Section>
+        <S.Section>
             <header><h2>Skills</h2></header>
-            <Tags>{items}</Tags>
-        </Section>
+            <S.Tags>{items}</S.Tags>
+        </S.Section>
     );
 };

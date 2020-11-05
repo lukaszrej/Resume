@@ -4,7 +4,7 @@ import { theme as mode } from '../../utils/theme';
 const { fontColor: fontForDark, background: backgroundForDark, sunBlack } = mode.light;
 const { fontColor: fontForLight, background: backgroundForLight, sunWhite } = mode.dark;
 
-export default createGlobalStyle`
+export const Global = createGlobalStyle`
     body {
         line-height: 1.625;
         background-color: ${props => props.isDark ? backgroundForDark : backgroundForLight};
