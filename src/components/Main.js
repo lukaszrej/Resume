@@ -1,5 +1,4 @@
 import React from "react";
-import * as S from "./styles";
 import Profile from "./main/Profile";
 import WorkExperience from "./main/WorkExperience";
 import Projects from "./main/Projects";
@@ -9,6 +8,7 @@ import Contact from "./main/Contact";
 import Skills from "./main/Skills";
 import SocialMedia from "./main/SocialMedia";
 import Languages from "./main/Languages";
+import * as S from "./styles";
 
 export default () => {
     return (

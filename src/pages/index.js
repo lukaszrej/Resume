@@ -1,15 +1,15 @@
 import React from "react";
-import Container from '../components/Container';
+import Layout from "../components/_Layout";
 import Header from "../components/Header";
-import Main from '../components/Main';
-import Consent from "../components/Consent";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
 
 export default () => {
     return (
-        <Container>
+        <Layout>
             <Header />
             <Main />
-            <Consent />
-        </Container>
+            <Footer />
+        </Layout>
     );
 };

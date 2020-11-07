@@ -18,6 +18,7 @@ export const Header = styled.section`
         height: 28px;
         width: 28px;
         border: none;
+        cursor: pointer;
 
         &:focus {
             outline: 0;

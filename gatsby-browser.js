@@ -1,10 +1,10 @@
 import React from "react";
-import GlobalContextProvider from "./src/store/GlobalContextProvider";
+import ContextProvider from "./src/store/ContextProvider";
 
 export const wrapRootElement = ({ element }) => {
     return (
-        <GlobalContextProvider>
-            { element }
-        </GlobalContextProvider>
+        <ContextProvider>
+            { element}
+        </ContextProvider>
     )
 }

@@ -1,11 +1,11 @@
 import React, {useContext} from "react";
+import { GlobalStateContext } from "../../store/ContextProvider";
 import usePersonalData from "../../data/hooks/usePersonalData";
 import * as S from "../styles";
-import { GlobalStateContext } from "../../store/GlobalContextProvider";
 
 export default () => {
-    const { socialMedia } = usePersonalData();
     const state = useContext(GlobalStateContext);
+    const { socialMedia } = usePersonalData();
 
     const linkedInURL = socialMedia.linkedInUrl;
     const linkedInLabel = socialMedia.linkedInLabel;

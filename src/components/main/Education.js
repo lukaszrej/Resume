@@ -17,7 +17,7 @@ export default () => {
     return (
         <S.Section>
             <header><h2>Education</h2></header>
-            { items}
+            {items}
         </S.Section>
     );
 };

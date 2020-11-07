@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
-import { GlobalDispatchContext } from "../store/GlobalContextProvider";
+import { GlobalDispatchContext } from "../store/ContextProvider";
 import usePersonalData from "../data/hooks/usePersonalData";
 import * as S from "./styles";
 
 export default () => {
-    const { name } = usePersonalData();
     const dispatch = useContext(GlobalDispatchContext);
+    const { name } = usePersonalData();
 
     const toggleTheme = () => {
-        dispatch({type: 'TOGGLE_DARK_MODE'});
+        dispatch({type: "TOGGLE_THEME"});
     }
 
     return (
         <S.Header>
             <header><h1>{ name }</h1></header>
             <button
-                aria-label="Toggle dark mode"
+                aria-label="Toggle color mode"
                 type="button"
                 onClick={toggleTheme} />
         </S.Header>
