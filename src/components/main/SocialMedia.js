@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
 import * as S from "../styles";
+import { GlobalStateContext } from "../../store/GlobalContextProvider";
 
 export default () => {
     const { socialMedia } = usePersonalData();
+    const state = useContext(GlobalStateContext);
 
     const linkedInURL = socialMedia.linkedInUrl;
     const linkedInLabel = socialMedia.linkedInLabel;
@@ -17,12 +19,12 @@ export default () => {
             <S.List>
                 <li>
                     <S.Link href={ linkedInURL } target="_blank" rel="noopener noreferrer">
-                        <S.LinkedInIcon />{ linkedInLabel }
+                        <S.LinkedInIcon isDark={state.isDark} />{ linkedInLabel }
                     </S.Link>
                 </li>
                 <li>
                     <S.Link href={ githubURL } target="_blank" rel="noopener noreferrer">
-                        <S.GithubIcon />{ githubLabel }
+                        <S.GithubIcon isDark={state.isDark} />{ githubLabel }
                     </S.Link>
                 </li>
             </S.List>
