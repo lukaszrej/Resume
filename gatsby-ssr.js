@@ -1,10 +1,10 @@
-const React = require("react");
-const ContextProvider = require("./src/store/ContextProvider");
+import React from "react";
+import ContextProvider from "./src/store/ContextProvider";
 
-exports.wrapRootElement = ({ element }) => {
+export const wrapRootElement = ({ element }) => {
     return (
         <ContextProvider>
-            { element }
+            { element}
         </ContextProvider>
     )
 }
