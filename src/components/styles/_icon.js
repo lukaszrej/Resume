@@ -19,21 +19,26 @@ const Icon = styled.i`
 `;
 
 export const LinkedInIcon = styled(Icon)`
-    background-image: ${props => props.isDark ? `url("${linkedInBlack}")` : `url("${linkedInWhite}")` };
+    background-image: url(${linkedInWhite});
+    background-image: url("${props => !props.isDark ? linkedInWhite : linkedInBlack}");
 `;
 
 export const GithubIcon = styled(Icon)`
-    background-image: ${props => props.isDark ? `url("${githubBlack}")` : `url("${githubWhite}")` };
+    background-image: url(${githubWhite});
+    background-image: url("${props => !props.isDark ? githubWhite : githubBlack}");
 `;
 
 export const LocationIcon = styled(Icon)`
-    background-image: ${props => props.isDark ? `url("${locationBlack}")` : `url("${locationWhite}")` };
+    background-image: url(${locationWhite});
+    background-image: url("${props => !props.isDark ? locationWhite : locationBlack}");
 `;
 
 export const PhoneIcon = styled(Icon)`
-    background-image: ${props => props.isDark ? `url("${phoneBlack}")` : `url("${phoneWhite}")` };
+    background-image: url(${phoneWhite});
+    background-image: url("${props => !props.isDark ? phoneWhite : phoneBlack}");
 `;
 
 export const MailIcon = styled(Icon)`
-    background-image: ${props => !props.isDark ? `url("${mailWhite}")` : `url("${mailBlack}")` };
+    background-image: url(${mailWhite});
+    background-image: url("${props => !props.isDark ? mailWhite : mailBlack}");
 `;
