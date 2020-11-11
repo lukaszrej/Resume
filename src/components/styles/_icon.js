@@ -19,26 +19,21 @@ const Icon = styled.i`
 `;
 
 export const LinkedInIcon = styled(Icon)`
-    background-image: url(${linkedInWhite});
-    background-image: url("${props => !props.isDark ? linkedInWhite : linkedInBlack}");
+    background-image: url("${props => props.isDark ? linkedInWhite : linkedInBlack}");
 `;
 
 export const GithubIcon = styled(Icon)`
-    background-image: url(${githubWhite});
-    background-image: url("${props => !props.isDark ? githubWhite : githubBlack}");
+    background-image: url("${props => props.isDark ? githubWhite : githubBlack}");
 `;
 
 export const LocationIcon = styled(Icon)`
-    background-image: url(${locationWhite});
-    background-image: url("${props => !props.isDark ? locationWhite : locationBlack}");
+    background-image: url("${props => props.isDark ? locationWhite : locationBlack}");
 `;
 
 export const PhoneIcon = styled(Icon)`
-    background-image: url(${phoneWhite});
-    background-image: url("${props => !props.isDark ? phoneWhite : phoneBlack}");
+    background-image: url("${props => props.isDark ? phoneWhite : phoneBlack}");
 `;
 
 export const MailIcon = styled(Icon)`
-    background-image: url(${mailWhite});
-    background-image: url("${props => !props.isDark ? mailWhite : mailBlack}");
+    background-image: url("${props => props.isDark ? mailWhite : mailBlack}");
 `;

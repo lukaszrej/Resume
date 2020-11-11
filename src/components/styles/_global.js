@@ -7,15 +7,15 @@ const { fontColor: fontForLight, background: backgroundForLight, sunWhite } = mo
 export const Global = createGlobalStyle`
     body {
         line-height: 1.625;
-        background-color: ${props => props.isDark ? backgroundForDark : backgroundForLight};
+        background-color: ${props => props.isDark ? backgroundForLight : backgroundForDark};
     }
 
     h1, h2, p, div, a {
-        color: ${props => props.isDark ? fontForDark : fontForLight};
+        color: ${props => props.isDark ? fontForLight : fontForDark};
     }
 
     button {
-        background-image: url("${props => props.isDark ? sunBlack : sunWhite}");
+        background-image: url("${props => props.isDark ? sunWhite : sunBlack}");
         background-color: transparent;
     }
 `;
