@@ -1,10 +1,6 @@
 import styled from 'styled-components';
-import { theme as mode } from '../../utils/theme';
 
-const { linkedInBlack, githubBlack, phoneBlack, mailBlack, locationBlack } = mode.light;
-const { linkedInWhite, githubWhite, phoneWhite, mailWhite, locationWhite } = mode.dark;
-
-const Icon = styled.i`
+export const Icon = styled.i`
     background-color: transparent;
     color: transparent;
     background-repeat: no-repeat;
@@ -16,24 +12,4 @@ const Icon = styled.i`
     position: relative;
     top: 6px;
     margin-right: 6px;
-`;
-
-export const LinkedInIcon = styled(Icon)`
-    background-image: url("${props => props.isDark ? linkedInWhite : linkedInBlack}");
-`;
-
-export const GithubIcon = styled(Icon)`
-    background-image: url("${props => props.isDark ? githubWhite : githubBlack}");
-`;
-
-export const LocationIcon = styled(Icon)`
-    background-image: url("${props => props.isDark ? locationWhite : locationBlack}");
-`;
-
-export const PhoneIcon = styled(Icon)`
-    background-image: url("${props => props.isDark ? phoneWhite : phoneBlack}");
-`;
-
-export const MailIcon = styled(Icon)`
-    background-image: url("${props => props.isDark ? mailWhite : mailBlack}");
 `;

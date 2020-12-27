@@ -13,7 +13,6 @@ const typography = new Typography({
     bodyFontFamily: ["Work Sans", "sans-serif"],
 });
 
-// Inserting styles into the head-element
 typography.injectStyles();
 
 export default typography;

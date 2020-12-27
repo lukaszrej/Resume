@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Column = styled.div`
     max-width: 55%;
+    padding-right: 24px;
 
     @media screen and (max-width: 960px) {
         max-width: 50%;

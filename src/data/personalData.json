@@ -1,6 +1,6 @@
 {
     "name": "Łukasz Rej",
-    "profile": "I've been learning front-end technologies for three years. In 2019 I finished the CodersLab (IT-Bootcamp in Warsaw). First practical experience as a Junior Frontend Developer is behind me. Earlier I worked for almost six years for German and Swiss partners in a finance-department.",
+    "profile": "Frontend developer working with React.js, JavaScript and Typescript. In 2019 worked as a Frontend Developer in the Danish e-commerce company - Miinto. Then moved to Agora SA and started gaining my commercial experience working with React.js. Before that I've used to work in an accountant in a finance-department.",
     "contact": {
         "location": "Location: Czestochowa",
         "phone": "+48 504 264 554",
@@ -17,7 +17,7 @@
             "id": 0,
             "company": "Agora SA",
             "dates": "08/2020 – present",
-            "position": "Frontend/React Developer",
+            "position": "Frontend/React.js Developer",
             "tasks": [
                 "Work with React.js and TypeScript",
                 "Ad hoc job with advertisement development in plain JavaScript",
