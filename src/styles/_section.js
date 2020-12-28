@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 
     & h1, & h2 {
         margin-bottom: 1rem;

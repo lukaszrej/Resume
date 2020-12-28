@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/_Layout";
+import Layout from "../components/Layout";
 import Header from "../components/Header";
-import * as S from "../components/styles";
+import * as S from "../styles";
 
 export default () => {
     return (

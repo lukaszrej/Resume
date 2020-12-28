@@ -1,14 +1,14 @@
 import React from "react";
-import Profile from "./main/Profile";
-import WorkExperience from "./main/WorkExperience";
-import Projects from "./main/Projects";
-import Education from "./main/Education";
-import OtherExperience from "./main/OtherExperience";
-import Contact from "./main/Contact";
-import Skills from "./main/Skills";
-import SocialMedia from "./main/SocialMedia";
-import Languages from "./main/Languages";
-import * as S from "./styles";
+import Profile from "./Profile";
+import WorkExperience from "./WorkExperience";
+import Projects from "./Projects";
+import Education from "./Education";
+import OtherExperience from "./OtherExperience";
+import Contact from "./Contact";
+import Skills from "./Skills";
+import SocialMedia from "./SocialMedia";
+import Languages from "./Languages";
+import * as S from "../../styles";
 
 export default () => {
     return (

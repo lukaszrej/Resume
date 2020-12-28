@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import * as theme from '../../utils/theme';
+import * as theme from '../utils/theme';
 
 export const Global = createGlobalStyle`
-    body {
+    body, #box {
         line-height: 1.625;
         background-color: ${props => props.isDark ? theme.dark.background : theme.light.background};
     }

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalStateContext } from "../../store/ContextProvider";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import * as S from "../styles";
+import * as S from "../../styles";
 
 export default () => {
     const { contact } = usePersonalData();

@@ -1,6 +1,6 @@
 import React from "react";
 import usePersonalData from "../../data/hooks/usePersonalData";
-import * as S from "../styles";
+import * as S from "../../styles";
 
 export default () => {
     const { profile } = usePersonalData();

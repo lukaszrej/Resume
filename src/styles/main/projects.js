@@ -21,8 +21,9 @@ export const Projects = styled.article`
     & ul {
         list-style-type: none;
         margin: 0;
+        margin-bottom: 24px;
 
-        &>li {
+        & > li {
             font-size: .9rem;
             margin-bottom: .2rem;
         }

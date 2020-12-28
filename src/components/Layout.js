@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalStateContext } from "../store/ContextProvider";
-import Helmet from "./_Helmet";
-import * as S from "./styles";
+import Helmet from "./Helmet";
+import * as S from "../styles";
 
 export default ({ children }) => {
     const state = useContext(GlobalStateContext);

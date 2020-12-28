@@ -1,15 +1,20 @@
+// globals
 export * from "./_reset";
 export * from "./_global";
 
-export * from "./_layout";
+// sections
+export * from "./header/header";
+export * from "./footer/consent";
+export * from "./main/main";
+export * from "./main/institution";
+export * from "./main/projects";
+
+// components
 export * from "./_button";
 export * from "./_column";
-export * from "./_main";
-export * from "./_header";
+export * from "./_layout";
 export * from "./_icon";
 export * from "./_link";
 export * from "./_list";
-export * from "./_institution";
-export * from "./_projects";
 export * from "./_section";
 export * from "./_tags";
